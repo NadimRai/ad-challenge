@@ -15,7 +15,7 @@ module.exports = function(environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
       }
-    }, 
+    },
       firebase:{
         apiKey: "AIzaSyAQT8S7QsFlclfGGaa0-yy4yO5Cj3ydRgM",
         authDomain: "messageboard-c00b5.firebaseapp.com",
@@ -23,6 +23,9 @@ module.exports = function(environment) {
       storageBucket: "messageboard-c00b5.appspot.com",
       messagingSenderId: "716848483490"
       },
+      torii: {
+      sessionServiceName: 'session'
+    },
 
 
 

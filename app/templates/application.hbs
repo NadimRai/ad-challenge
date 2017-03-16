@@ -9,6 +9,16 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
       </ul>
+       <!-- this is the logout button -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+
+      {{#if session.isAuthenticated}}
+               <button {{action 'logout'}}>Logout</button>
+             {{/if}}
+             </ul>
+       </div>
+
       <div class="nav-form">
 	      <form >
 	        <div class="form-horizontal form-group form-group row">
@@ -30,4 +40,5 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+{{log session.currentUser}}
   {{outlet}}
